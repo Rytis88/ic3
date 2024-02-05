@@ -1,0 +1,23 @@
+{
+    "jobs": {
+        "ic3" : {
+			"url" : "https://www.ic3.gov/Media/PDF/AnnualReport/{year}State/StateReport.aspx#?s=1",
+			"local_folder_path" : "/home/TRYSAK/venv/files",
+            "tables": {
+				"ic3__crime_type_by_victim_count": "Crime Type by Victim Count",
+				"ic3__crime_type_by_victim_loss": "Crime Type by Victim Loss",
+				"ic3__crime_type_by_subject_count": "Crime Type by Subject Count",
+				"ic3__crime_type_by_subject_loss": "Crime Type by Subject Loss",
+				"ic3__victims_by_age_group": "Victims by Age Group"
+			},
+			"years" : ["2016","2017","2018","2019","2020","2021","2022"],
+			"dtype" : { 
+				"ic3__crime_type_by_victim_count" : {"crime_type":"string","victim_count":"int32"},
+				"ic3__crime_type_by_victim_loss" : {"crime_type":"string","loss_amount":"string"},
+				"ic3__crime_type_by_subject_count" : {"crime_type":"string","subject_count":"int32"},
+				"ic3__crime_type_by_subject_loss" : {"crime_type":"string","loss_amount":"string"},
+				"ic3__victims_by_age_group" : {"age_range":"string","count":"int32", "amount_loss":"string"}
+			}
+        }
+    }
+}
