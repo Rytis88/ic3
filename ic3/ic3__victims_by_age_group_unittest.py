@@ -6,7 +6,7 @@ class TestData(unittest.TestCase):
 
     def setUp(self):
         # Create a sample DataFrame for testing
-        parquet_directory_path  = "/home/TRYSAK/venv/files/ic3__victims_by_age_group/year=2016/state=Florida/090bb24cc23a4a6f91a83eaf96843cc3.parquet" 
+        parquet_directory_path  = "" 
         self.df = pd.read_parquet(parquet_directory_path)
 
     def test_file_not_empty(self):
