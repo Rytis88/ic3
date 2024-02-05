@@ -7,7 +7,7 @@ Python 3.6 or later
 Required Python libraries: requests, pandas, beautifulsoup4, pyarrow
 Usage
 Clone the repository:
-git https://github.com/Rytis88/ic3.git
+git clone https://github.com/Rytis88/ic3.git
 cd ic3
 
 Install the required dependencies:
