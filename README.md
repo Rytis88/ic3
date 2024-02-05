@@ -2,7 +2,7 @@ Internet Crime Complaint Load
 Overview
 The Internet Crime Complaint Load is a Python script designed to fetch and process internet crime complaint data from a specified URL, transforming it into a structured form and storing it in Parquet files. The script utilizes various Python libraries, including requests, pandas, beautifulsoup4, pyarrow, and json. It is configured using a JSON parameter file, allowing easy customization of input parameters.
 
-Requirements
+Requirements:
 Python 3.6 or later
 Required Python libraries: requests, pandas, beautifulsoup4, pyarrow
 Usage
@@ -22,10 +22,10 @@ tables: Mapping of destination tables to the header strings to identify them in 
 years: List of years for which data should be fetched.
 df_dtype: Data types for columns in each destination table.
 
-Logging
+Logging:
 The script utilizes logging to capture important events and errors. The log file (ic3.log) is created in the script's directory.
 
-Exception Handling
+Exception Handling:
 The script handles exceptions gracefully and logs errors with relevant information.
 
 Unittest added for one of the tables: ic3__victims_by_age_group_unittest.py
